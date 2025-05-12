@@ -40,7 +40,7 @@ function x = getcycle(r)
 cur = 0.333;
 x = [];
 
-for j = 1:1000
+for j = 1:10000
 
    %If you want to change the iterated map that we are analyzing, you
    %change this one line right here. 
