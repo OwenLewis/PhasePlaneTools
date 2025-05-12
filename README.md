@@ -85,8 +85,7 @@ The rest of this page is dedicated to small Matlab functions and scripts that I 
 They are included here so that my students can download, modify, and play with them on their own time. They can also be modified/used to complete homework assignments if you wish. 
 
 <h2>Lorenz_Explore</h2>
-I have added my own file named "lorenz_explore.m" to the repository. 
-It is designed to simply integrate the Lorenz equations for various parameter values and plot the results. 
+The file named "lorenz_explore.m" to the repository is designed to simply integrate the Lorenz equations for various parameter values and plot the results. 
 The purpose is for you to explore the various behaviors that existing within this shockingly diverse dynamical system. 
 To begin, download it as you would any of the other files in the repository, make sure the file is in the directory of your choice, and navigate to that directory in Matlab. 
 If you ever forget how to use this program, you can type 
