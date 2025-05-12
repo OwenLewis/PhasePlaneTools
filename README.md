@@ -35,7 +35,7 @@ Various community members have tried to fix these issues on their own, and the r
 It's somewhat overwhelming, and actually the main reason I originally started this whole webpage. 
 In the sections below you you will find a few options with relative benefits & drawbacks. 
 
-<h3>Phase Plane and Slop Field App</h3>
+<h3>Phase Plane and Slope Field App</h3>
 This option is probably the most stable moving forward. 
 Eventually the community outcry over the languishing state of PPlane caused an employee of Mathworks to take notice. 
 The result is a "Matlab App" developed and maintained by Mathworks that reproduces most (if not all) of the functionality of PPlane. 
@@ -79,3 +79,43 @@ and PPlane should fire right up (see screenshot).
 Happy phase-planing!
 
 ![Alt Text](./run.png)
+
+<h1>Self-Made Stuff</h1>
+The rest of this page is dedicated to small Matlab functions and scripts that I have written to illustrate various concepts in Math 412. 
+They are included here so that my students can download, modify, and play with them on their own time. They can also be modified/used to complete homework assignments if you wish. 
+
+<h2>Lorenz_Explore</h2>
+I have added my own file named "lorenz_explore.m" to the repository. 
+It is designed to simply integrate the Lorenz equations for various parameter values and plot the results. 
+The purpose is for you to explore the various behaviors that existing within this shockingly diverse dynamical system. 
+To begin, download it as you would any of the other files in the repository, make sure the file is in the directory of your choice, and navigate to that directory in Matlab. 
+If you ever forget how to use this program, you can type 
+
+```matlab
+	help lorenz_explore
+```
+and Matlab will print a small reminder for you (see screenshot). 
+
+![Alt Text](./explore.png)
+
+To run the program, you can call it with 7 arguments:
+* The parameter r
+* The parameter sigma
+* The parameter b
+* Your preferred initial condition for the x-coordinate
+* Your preferred initial condition for the y-coordinate
+* Your preferred initial condition for the z-coordinate
+* The amount of time you wish to draw the solution for.
+
+For example, you could type
+
+```matlab
+	lorenz_explore(28,10,8/3,0,1,0,30)
+```
+
+The program will numerically approximate the solution and plot two figures. 
+Figure 1 will show the trajectory in 3-D phase space.
+Figure 3 will show the x, y, and z components of the soluton as functions of time in three separate panels (along with some relevant fixed points).
+See the screenshot below.
+
+![Alt Text](./results.png)
